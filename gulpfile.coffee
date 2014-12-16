@@ -3,6 +3,7 @@ util = require 'gulp-util'
 coffee = require 'gulp-coffee'
 sass = require 'gulp-sass'
 tictail = require 'gulp-tictail'
+plumber = require 'gulp-plumber'
 
 
 src =
@@ -10,14 +11,20 @@ src =
   styles: 'src/styles/*.scss'
 dest = 'dist'
 
+errorHandler = (error) ->
+  util.log error
+  @emit('end')
+
 gulp.task 'styles', ->
   gulp.src(src.styles)
-    .pipe(sass().on('error', util.log))
+    .pipe(plumber(errorHandler))
+    .pipe(sass())
     .pipe(gulp.dest(dest))
 
 gulp.task 'scripts', ->
   gulp.src(src.scripts)
-    .pipe(coffee({bare: true}).on('error', util.log))
+    .pipe(plumber(errorHandler: errorHandler))
+    .pipe(coffee())
     .pipe(gulp.dest(dest))
 
 gulp.task 'watch', ->
