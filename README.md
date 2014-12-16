@@ -1,6 +1,6 @@
 # theme-example
 
-An example theme using [gulp-tictail](https://github.com/tictail/theme-example) and an opinionated workflow with SASS and CoffeeScript.
+An example theme using [gulp-tictail](https://github.com/tictail/gulp-tictail) and an opinionated workflow with SASS and CoffeeScript.
 
 We would suggest forking this repository and go from there.
 
