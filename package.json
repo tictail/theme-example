@@ -1,0 +1,20 @@
+{
+  "name": "theme-example",
+  "version": "0.0.1",
+  "author": [
+    "Joakim Ekberg"
+  ],
+  "description": "An example theme using gulp-tictail",
+  "license": "MIT",
+  "repository": "https://github.com/tictail/theme-example.git",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-coffee": "^2.2.0",
+    "gulp-less": "^2.0.1",
+    "gulp-sass": "^1.2.4",
+    "gulp-util": "^3.0.1",
+    "gulp-tictail": "0.0.1"
+  }
+}

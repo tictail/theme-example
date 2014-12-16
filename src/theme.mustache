@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{store_name}}</title>
+    <link href="{{cdn_url}}/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Welcome to {{store_name}}</h1>
+    <p>{{store_description}}</p>
+    <ul>
+      <li><a href="/">Home</a></li>
+      {{#navigation}}
+      <li>
+        <a href="{{url}}">{{label}} ({{count}})</a>
+        <ul>
+        {{#children}}
+          <li><a href="{{url}}">{{label}} ({{count}})</a></li>
+        {{/children}}
+        </ul>
+      </li>
+      {{/navigation}}
+    </ul>
+
+    {{#list_page}}
+    <ul>
+    {{#products}}
+      <li><a href="/{{url}}">{{title}}</a></li>
+    {{/products}}
+    </ul>
+    {{/list_page}}
+  </body>
+</html>
