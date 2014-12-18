@@ -31,7 +31,7 @@ gulp.task 'watch', ->
   gulp.watch(src.styles, ['styles'])
   gulp.watch(src.scripts, ['scripts'])
 
-gulp.task 'serve', -> tictail.serve(id: 'px8')
+gulp.task 'serve', -> tictail.serve(store_id: 't')
 
 gulp.task 'upload', -> tictail.upload(token: '<access_token>')
 
