@@ -33,6 +33,4 @@ gulp.task 'watch', ->
 
 gulp.task 'serve', -> tictail.serve(store_id: 't')
 
-gulp.task 'upload', -> tictail.upload(token: '<access_token>')
-
 gulp.task 'default', ['watch', 'serve']
