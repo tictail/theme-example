@@ -2,7 +2,8 @@
   "name": "theme-example",
   "version": "0.0.1",
   "author": [
-    "Joakim Ekberg"
+    "Joakim Ekberg",
+    "Erik Eng"
   ],
   "description": "An example theme using gulp-tictail",
   "license": "MIT",
