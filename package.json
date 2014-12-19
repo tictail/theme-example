@@ -18,7 +18,7 @@
     "gulp-livereload": "^3.0.2",
     "gulp-plumber": "^0.6.6",
     "gulp-sass": "^1.2.4",
-    "gulp-tictail": "0.0.1",
+    "gulp-tictail": "0.1.1",
     "gulp-util": "^3.0.1"
   }
 }
