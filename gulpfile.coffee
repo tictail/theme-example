@@ -41,7 +41,7 @@ gulp.task 'watch', ->
   gulp.watch src.theme, ['theme']
 
 gulp.task 'serve', ->
-  tictail.serve store_id: 't'
+  tictail.serve store_id: 'pf'
   livereload.listen basePath: dest
 
 gulp.task 'default', ['watch', 'serve']
