@@ -8,8 +8,10 @@
   <body>
     <h1>Welcome to {{store_name}}</h1>
     <p>{{store_description}}</p>
+
     <ul>
       <li><a href="/">Home</a></li>
+      <li><a href="/products">All Products</a></li>
       {{#navigation}}
       <li>
         <a href="{{url}}">{{label}} ({{count}})</a>
@@ -22,13 +24,10 @@
       {{/navigation}}
     </ul>
 
-    {{#list_page}}
-    <ul>
-    {{#products}}
-      <li><a href="/{{url}}">{{title}}</a></li>
-    {{/products}}
-    </ul>
-    {{/list_page}}
+    {{>list_page}}
+
+    {{>product_page}}
+
     <script src="{{cdn_url}}/main.js"></script>
   </body>
 </html>
