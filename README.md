@@ -14,7 +14,8 @@ We would suggest forking this repository and go from there.
 Clone this repository, then:
 
 ```bash
-$ npm install gulp -g; $ npm install
+$ npm install gulp -g
+$ npm install
 ```
 
 
@@ -25,3 +26,5 @@ Start the Tictail theme development environment:
 ```bash
 $ gulp
 ```
+
+And then hit [http://localhost:5555/](http://localhost:5555/) to preview your theme.
