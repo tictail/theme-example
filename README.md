@@ -14,7 +14,7 @@ We would suggest forking this repository and go from there.
 Clone this repository, then:
 
 ```bash
-$ npm install gulp -g
+$ npm install -g gulp
 $ npm install
 ```
 
