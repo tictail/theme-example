@@ -8,7 +8,9 @@
   "description": "An example theme using gulp-tictail",
   "license": "MIT",
   "repository": "https://github.com/tictail/theme-example.git",
-  "scripts": {},
+  "scripts": {
+    "dev": "gulp"
+  },
   "dependencies": {},
   "devDependencies": {
     "coffee-script": "^1.8.0",
